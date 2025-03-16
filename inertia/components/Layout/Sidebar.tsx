@@ -14,6 +14,8 @@ export function Sidebar({ children }: any) {
     setSelectedSeller(null)
     setSelectedSports(null)
     filterProducts()
+    const selects = document.querySelectorAll('select')
+    selects.forEach((select) => (select.value = ''))
   }
 
   function handleCategories(value: string | null) {
@@ -83,6 +85,7 @@ export function Sidebar({ children }: any) {
             <div>
               <h3 className="text-sm font-medium text-gray-700">Categorias</h3>
               <select
+                value={selectedCategories ?? ''}
                 onChange={(e) => handleCategories(e.target.value || null)}
                 className="w-full mt-1 p-2 border rounded-md text-gray-700 focus:ring focus:ring-sand-5"
               >
@@ -98,6 +101,7 @@ export function Sidebar({ children }: any) {
             <div>
               <h3 className="text-sm font-medium text-gray-700">Marca</h3>
               <select
+                value={selectedSeller ?? ''}
                 onChange={(e) => handleSeller(e.target.value || null)}
                 className="w-full mt-1 p-2 border rounded-md text-gray-700 focus:ring focus:ring-sand-5"
               >
@@ -113,6 +117,7 @@ export function Sidebar({ children }: any) {
             <div>
               <h3 className="text-sm font-medium text-gray-700">Esportes</h3>
               <select
+                value={selectedSports ?? ''}
                 onChange={(e) => handleSport(e.target.value || null)}
                 className="w-full mt-1 p-2 border rounded-md text-gray-700 focus:ring focus:ring-sand-5"
               >
