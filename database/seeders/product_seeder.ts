@@ -18,7 +18,7 @@ export default class extends BaseSeeder {
       {
         name: 'Regata do Chicago Bulls',
         image_url:
-          'https://static.nikejordan.com.br/produtos/camiseta-regata-nba-adidas-swingman-chicago-bulls-rose/6B/D13-0209-06B/13-0209-06B_zoom1.jpg?ts=1600895852',
+          'https://static.lojanba.com/produtos/camiseta-regata-nba-adidas-swingman-chicago-bulls-rose/68/D13-0209-068/D13-0209-068_zoom1.jpg?ts=1600856952',
         type: 'Regata',
         price: 499.99,
         seller: 'Adidas',
@@ -30,9 +30,9 @@ export default class extends BaseSeeder {
       {
         name: 'Calção da Puma',
         image_url:
-          'https://static.netshoes.com.br/produtos/calcao-puma-liga-core-masculino/58/NWG-1619-058/NWG-1619-058_zoom1.jpg?ts=1634647138',
+          'https://static.netshoes.com.br/produtos/calcao-puma-liga-core-masculino/56/NWG-1619-056/NWG-1619-056_zoom1.jpg?ts=1643646713&',
         type: 'Calção',
-        price: 99.98,
+        price: 99.69,
         seller: 'Puma',
         available_sizes: ['P', 'M', 'G'],
         details:
@@ -42,23 +42,23 @@ export default class extends BaseSeeder {
       {
         name: 'Calção da Nike',
         image_url:
-          'https://static.nikejordan.com.br/produtos/calcao-nike-dri-fit-academy-masculino/26/HZM-0829-326/HZM-0829-326_zoom1.jpg?ts=1608657811',
+          'https://static.netshoes.com.br/produtos/calcao-nike-dri-fit-academy-masculino/26/HZM-0829-326/HZM-0829-326_zoom1.jpg?ts=1660657811',
         type: 'Calção',
-        price: 129.99,
+        price: 109.69,
         seller: 'Nike',
-        available_sizes: ['P', 'M', 'G', 'GG'],
+        available_sizes: [],
         details:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         sport: 'Corrida',
       },
       {
-        name: 'Meia do Jordan',
+        name: 'Meia da Jordan',
         image_url:
-          'https://static.vexxing.com.br/arquivos/ids/193193-1000-1000/meias-Nike-Jordan-Jumpman.jpg?v=63628280007',
-        type: 'Meia',
-        price: 39.99,
-        seller: 'Nike',
-        available_sizes: ['U'],
+          'https://artwalk.vteximg.com.br/arquivos/ids/193193-1000-1000/Meia-Nike-Jordan-Jumpman-Masculina.jpg?v=636210228372600000',
+        type: 'Acessório',
+        price: 119.69,
+        seller: 'Jordan',
+        available_sizes: ['44', '39'],
         details:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         sport: 'Basquete',
