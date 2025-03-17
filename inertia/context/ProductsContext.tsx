@@ -3,6 +3,7 @@ import type { Product } from '../../types/product'
 import axios from 'axios'
 
 interface ProductsContextType {
+  allProducts: Product[]
   products: Product[]
   loading: boolean
   categories: string[]
@@ -55,6 +56,7 @@ export function ProductsProvider({ children }: { children: React.ReactNode }) {
   return (
     <ProductsContext.Provider
       value={{
+        allProducts,
         products: filteredProducts,
         loading,
         sellers,

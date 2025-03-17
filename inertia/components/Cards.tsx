@@ -10,7 +10,7 @@ export function Cards({ product, onClick }: CardsProps) {
     <>
       <article
         onClick={onClick}
-        className="row-span-3 relative p-6 shadow-sm hover:shadow border border-sand-7 hover:border-sand-8 rounded-2xl transition ease-in-out duration-700 group flex flex-col gap-8"
+        className="cursor-pointer row-span-3 relative p-6 shadow-sm hover:shadow border border-sand-7 hover:border-sand-8 rounded-2xl transition ease-in-out duration-700 group flex flex-col gap-8"
       >
         <div className="relative opacity-80">
           <img src={product.imageUrl} alt="card" className="w-full h-full object-cover" />
