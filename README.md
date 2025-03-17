@@ -1,10 +1,10 @@
 ## Example of how the project will work
 
-![Interface da aplicação mostrando a página Heroes com um botão Fetch](./example/demonstracao.gif)
+![Interface da aplicação mostrando a página do ecommerce](./example/demonstracao.gif)
 
 ## Tecnologias utilizadas
 
-- React
+- ReactJS
 - AdonisJS
 - SQLite
 - TailwindCSS
