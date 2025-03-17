@@ -78,15 +78,21 @@ export function ModalViewProduct({ product, onClick }: CardsProps) {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2">
-                {(product?.availableSizes || []).map((size: any, index: number) => (
-                  <div
-                    key={index}
-                    className="px-3 py-2 border rounded-lg min-w-[50px] text-center border-black bg-gray-200 text-sm"
-                  >
-                    {size}
+              <div className="p-2">
+                {(product?.availableSizes || []).length === 0 ? (
+                  <p className="text-red-500">Não há tamanhos disponíveis</p>
+                ) : (
+                  <div className="flex flex-wrap gap-2">
+                    {(product?.availableSizes || []).map((size: any, index: number) => (
+                      <div
+                        key={index}
+                        className="px-3 py-2 border rounded-lg min-w-[50px] text-center border-black bg-gray-200 text-sm"
+                      >
+                        {size}
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
               </div>
             </div>
 
